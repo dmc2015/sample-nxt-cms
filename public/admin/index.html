@@ -9,10 +9,16 @@
   </head>
   <body>
     <script>
-      window.CMS_MANUAL_INIT = true; // Optional, depending on your setup
-      window.initCMS = function() {
-        CMS.init();
-      };
+      // Initialize CMS only after DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        window.CMS_MANUAL_INIT = true; // Optional if you're manually initializing
+        window.initCMS = function() {
+          CMS.init();
+        };
+        
+        // Call the initialization function
+        window.initCMS();
+      });
     </script>
   </body>
 </html>
