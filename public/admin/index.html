@@ -10,12 +10,17 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
+    
+    <script>window.CMS_MANUAL_INIT = true;</script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script type="module">window.initCMS();</script>
+    
+    <!-- <script>
       import CMS from "decap-cms-app";
       // Initialize the CMS object
       CMS.init();
       // Now the registry is available via the CMS object.
       CMS.registerPreviewTemplate("my-template", MyTemplate);
-    </script>
+    </script> -->
   </body>
 </html>
