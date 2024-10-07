@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script> <!-- Ensure this is loaded first -->
+    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script> <!-- Ensure this is loaded first -->
   </head>
   <body>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function() {
         window.CMS_MANUAL_INIT = true; // Optional if you're manually initializing
         window.initCMS = function() {
@@ -22,7 +22,7 @@
         // Call the initialization function
         window.initCMS();
       });
-    </script>
+    </script> -->
     <script src="./cms.js"></script> <!-- Use the bundled CMS file -->
     <script type="module" src="./index.js"></script> <!-- Include your JavaScript file -->
   </body>
